@@ -1,0 +1,20 @@
+/*
+ * The pattern in Listing 8-2
+ */
+import java.util.Scanner;
+<b>import java.io.File;</b>
+<b>import java.io.IOException;</b>
+class <i>SomeClassName</i> {
+    public static void main(String args[]) 
+                                  <b>throws IOException</b> {
+        Scanner <b><i>scannerName</i></b> =
+            new Scanner(<b>new File("</b><b><i>SomeFileName</i></b><b>"</b>));
+        //<i>Some code goes here</i>
+        <b><i>scannerName</i></b>.nextInt();
+        <b><i>scannerName</i></b>.nextDouble();
+        <b><i>scannerName</i></b>.next();
+        <b><i>scannerName</i></b>.nextLine();
+        //<i>Some code goes here</i>
+        <b><i>scannerName</i></b>.close();
+    }
+}
